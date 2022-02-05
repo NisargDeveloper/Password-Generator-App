@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password-Generator App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="heading">
+        <h1 class="heading_1">Generate Password</h1>
+      </div>
+      <div class="logo">
+        <img src="./Kaneki-Aogiri-Tree.jpg" alt="Img of Kaneki-Aogiri-Tree" srcset="">
+      </div>
+    </div>
+    <div class="generated-pass">
+      <div class="text">
+        <p>Generated Password</p>
+      </div>
+      <div class="myPassword" id="myPassword"></div>
+    </div>
+    <div class="length">
+        <p>Length: <span id="length"></span></p>
+        <div class="slider_back">
+          <span class="number">4</span><input type="range" min="4" max="32" value="6" class="slider" id="slider"><span class="number">32</span>
+        </div>
+        
+    </div>
+    <div class="setting">
+      <p>Setting</p>
+      <div class="numbers checkbox_main">
+        <p class="setting-text">Include numbers</p>
+        <label>
+          <input type="checkbox" class= "input" id="numberEl">
+          <span class="checkbox_toggle"></span>
+        </label>
+      </div>
+      <div class="letters checkbox_main">
+        <p class="setting-text">Include Lower Case</p>
+        <label>
+          <input type="checkbox" class= "input" id="letterEl">
+          <span class="checkbox_toggle"></span>
+        </label>
+      </div>
+      <div class="letters checkbox_main">
+        <p class="setting-text">Include Upper Case</p>
+        <label>
+          <input type="checkbox" class= "input" id="upperCaseletterEl">
+          <span class="checkbox_toggle"></span>
+        </label>
+      </div>
+      <div class="symbols checkbox_main">
+        <p class="setting-text">Include symbols</p>
+        <label>
+          <input type="checkbox" class= "input" id="symbolEl">
+          <span class="checkbox_toggle"></span>
+        </label>
+      </div>
+    </div>
+
+    <button type="submit" class="button" id="button">
+      Generate Password
+    </button>
+  </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
+

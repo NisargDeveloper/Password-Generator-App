@@ -1,0 +1,166 @@
+*,*::before, *::after {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  background-color: #040f2d;
+}
+.main {
+  color: white;
+  width: 60%;
+  /* background-color: red; */
+  height: 90%;
+  position: relative;
+}
+
+.header {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img{
+  border: 4px solid rgb(49, 29, 161);
+  object-fit: fill;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.generated-pass {
+  width: 100%;
+}
+.text p {
+  color: #2b355a;
+  font-size: 18px;
+  font-weight: 1000;
+  text-transform: uppercase;
+  padding: 20px 0px 10px 0px;
+}
+
+.myPassword {
+  margin: 0 auto;
+  background: black;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  font-size: 32px;
+  opacity: 0.9;
+  background: #091642;
+  border-radius: 10px;
+}
+
+.length p {
+  color: #2b355a;
+  font-size: 18px;
+  opacity: 1;
+  text-transform: uppercase;
+  padding: 20px 0px 10px 0px;
+  font-weight: 1000;
+}
+.slider_back {
+  background-color:#091642;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 20px 0px 20px 0px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.number {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.slider {
+  width: 80%;
+  background: #1a4891;
+  height: 4px;
+  border-radius: 50px;
+}
+
+
+.checkbox_main {
+  display: flex;
+  background: #091642;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.checkbox_main label {
+  position: relative;
+  width: 80px;
+  height: 40px;
+}
+.input {
+  opacity: 0;
+}
+.checkbox_toggle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #14244c;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.checkbox_toggle::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: #b7bdc9;
+  position: absolute;
+  margin-left: 4px;
+  border-radius: 50px;
+  transition: .4s transform ease-in-out;
+}
+
+input:checked + .checkbox_toggle{
+  background-color: #157af5;
+  
+}
+input:checked + .checkbox_toggle::before{
+  background-color: white;
+  transform: translateX(42px);
+}
+
+.setting > p {
+  color: rgb(43, 53, 90);
+  font-size: 18px;
+  opacity: 1;
+  text-transform: uppercase;
+  padding: 20px 0px 10px;
+  font-weight: 1000;
+}
+
+.checkbox_main > p {
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+}
+
+.button {
+  border: none;
+  margin-top: 50px;
+  text-decoration: none;
+  width: 100%;
+  padding: 20px;
+  background-color: #3459ee;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
